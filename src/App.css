@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Свойство gap CSS задаёт отступы (gutters (en-US)) между столбцами и строками, а не вдоль края контейнера сетки. Является сокращением для свойств row-gap и column-gap. */
+
+.delete{
+    color: red;
+    cursor: pointer;
+}
+/* перечеркивание чекнутого инпута */
+input:checked + span{
+    text-decoration: line-through;
+}
